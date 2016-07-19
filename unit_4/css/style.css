@@ -38,9 +38,12 @@ h2 {
 main p {
 	font-family: 'Tinos', serif;
 	font-weight: 400;
+	font-size: 1.25em;
 	color: rgb(22,23,22);
-	width: 30em;
+	width: 37.5em;
 	line-height: 1.5em;
+	margin: auto;
+	padding: 1em;
 }
 
 
@@ -64,6 +67,8 @@ main p {
 
 #features {
 	background-color: rgba(22,23,22,.9);
+	margin: auto;
+	padding: 2em;
 }
 
 
@@ -104,7 +109,7 @@ a {
 }
 
 footer {
-	font-size: .5em;
+	font-size: .8em;
 	font-family: 'Tinos', sans-serif;
 	padding: 2em;
 	text-align: center;
