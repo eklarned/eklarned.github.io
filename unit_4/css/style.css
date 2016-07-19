@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Tinos:400,700');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+}
+
+header {
+	background-color: rgba(247,234,218,.5);
+	padding: 1em;
+	text-align: center;
+}
+
+
+h1 {
+	font-family: 'Tinos', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	line-height: 1.5em;
+}
+
+h2 {
+	font-family: 'Tinos', serif;
+	color: #FFE9D2;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+
+main p {
+	font-family: 'Tinos', serif;
+	font-weight: 400;
+	color: rgb(22,23,22);
+	width: 30em;
+	line-height: 1.5em;
+}
+
+
+
+.film {
+	float: left;
+	width: 33.3333%;
+	height: 0;
+	padding-bottom: 50%;
+	overflow: hidden;
+}
+
+.film img {
+	display: block;
+	width: 120%;
+}
+
+#features h2 {
+	color: white;
+}
+
+#features {
+	background-color: rgba(22,23,22,.9);
+}
+
+
+#television img {
+	width: 15%;
+	paddding: 1em;
+}
+
+#television {
+	background-color: white;
+}
+
+#television h2 {
+	color: #451500;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid rgb(22,23,22);
+	padding-bottom: .1em;
+}
+
+#lander img {
+	/*background: url(../images/gcr_control_room.jpg) no-repeat;*/
+	width: 100%;
+}
+	
+#intro{
+	background-color: rgba(247,234,218,.5);
+}
+
+#slogan {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-size: .65em;
+}
+
+footer {
+	font-size: .5em;
+	font-family: 'Tinos', sans-serif;
+	padding: 2em;
+	text-align: center;
+	background-color: rgba(247,234,218,.5);
+}
+

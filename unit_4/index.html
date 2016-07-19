@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>	
+
+<head>
+
+	<title>Chris Ruggiero, Composer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+		<!--nav>
+		<a class="navlinks" href="#">about</a>
+		<a class="navlinks" href="#">feature films</a>
+		<a class="navlinks" href="#">television</a>
+		<a class="navlinks" href="#">shorts</a>
+		<a class="navlinks" href="#">production</a>
+		</nav-->
+
+		<header>
+
+			<h1>Chris Ruggiero</h1>
+			<p id="slogan">Composer</p>
+			
+
+		</header>
+
+
+	<main>
+
+		<section id="lander">
+			<img src="images/gcr_control_room.jpg" alt="Chris Ruggiero hard at work in GCR" title="The Master at work.">
+		</section>
+		
+		<section id="intro">
+			<p>Chris Ruggiero is an accomplished composer. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p>Contact Chris: <a href="mailto:christianericruggiero@gmail.com">christianericruggiero@gmail.com</a>.</p>
+			
+		</section>
+			
+
+
+		<section id="features">
+
+			<h2>Feature films</h2>
+
+			<figure class="film">
+			<img src="images/indian_point.jpg" alt="Indian Point movie poster" title="Indian Point movie poster"></figure>
+		<!--iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/238064410&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe-->
+			<figure class="film"><img src="images/kehinde_poster.jpg" alt="Kehinde Wiley movie poster" title="Kehinde Wiley: An economy of grace movie poster"></figure>
+
+			<figure class="film"><img src="images/what-was-ours-poster.jpg" alt="What Was Ours movie poster" title="What was 
+				Ours movie poster"></figure>
+
+			<figure class="film"><img src="images/hooligan_poster.jpg" alt="Hooligan Sparrow movie poster" title="Hooligan Sparrow movie poster"></figure>
+
+			<figure class="film"><img src="images/out-run-poster.jpg" alt="Out Run movie poster" title="movie poster for Out Run"></figure>
+				
+			<figure class="film"><img src="images/soundbreaking.jpg" alt="soundbreaking movie poster" title="soundbreaking movie poster"></figure>
+				
+		</section>
+
+
+
+			
+		<section id="television">
+
+			<h2>Television</h2>
+
+		
+			<img src="images/american_pickers.jpg" alt="american pickers logo" title="american pickers logo">
+			<img src="images/brain-game.jpg" alt="brain game logo" title="brain game logo">
+			<img src="images/carson_daly.png" alt="carson daly logo" title="carson daly logo">
+			<img src="images/flipping_out.png" alt="flipping out logo" title="flipping out logo">
+			<img src="images/mtv-cribs.png" alt="mTV Cribs logo" title="mTV cribs logo">
+			<img src="images/pawn-stars.jpg" alt="pawn stars logo" title="pawn stars logo">
+			<img src="images/say_yes.png" alt="say yes to the dress logo" title="say yes to the dress logo">
+			<img src="images/the-voice-logo.png" alt="the voice logo" title="the voice logo">
+			<img src="images/trl.png" alt="trl logo" title="trl logo">
+			<img src="images/tosh-logo.png" alt="tosh logo" title="toshlogo">
+
+		</section>
+
+
+	</main>
+
+	<footer>
+
+		<p>This is the end. Back to the <a href="#">top</a>.</p>
+		
+		<script type="text/javascript"> 
+		$(document).ready(function() {
+  function filterPath(string) {
+  return string
+    .replace(/^\//,'')
+    .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+    .replace(/\/$/,'');
+  }
+  var locationPath = filterPath(location.pathname);
+  var scrollElem = scrollableElement('html', 'body');
+ 
+  $('a[href*=#]').each(function() {
+    var thisPath = filterPath(this.pathname) || locationPath;
+    if (  locationPath == thisPath
+    && (location.hostname == this.hostname || !this.hostname)
+    && this.hash.replace(/#/,'') ) {
+      var $target = $(this.hash), target = this.hash;
+      if (target) {
+        var targetOffset = $target.offset().top;
+        $(this).click(function(event) {
+          event.preventDefault();
+          $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+            location.hash = target;
+          });
+        });
+      }
+    }
+  });
+ 
+  // use the first element that is "scrollable"
+  function scrollableElement(els) {
+    for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+      var el = arguments[i],
+          $scrollElement = $(el);
+      if ($scrollElement.scrollTop()> 0) {
+        return el;
+      } else {
+        $scrollElement.scrollTop(1);
+        var isScrollable = $scrollElement.scrollTop()> 0;
+        $scrollElement.scrollTop(0);
+        if (isScrollable) {
+          return el;
+        }
+      }
+    }
+    return [];
+  }
+ 
+});>
+</script>
+
+	</footer>
+
+
+</body>
+</html>
