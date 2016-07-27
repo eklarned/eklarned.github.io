@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">	
+
+<head>
+	<meta charset="utf-8">
+	<title>Chris Ruggiero, Composer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id ="wrapper">
+
+		<header id="header">
+			<h1>Chris Ruggiero</h1>
+			<p id="slogan">Composer</p>
+		</header>
+
+		<nav>
+			<a class="navlinks" href="#">about</a>
+			<a class="navlinks" href="#">listen</a>
+			<!--a class="navlinks" href="#">feature films</a>
+			<a class="navlinks" href="#">television</a>
+			<a class="navlinks" href="#">shorts</a>
+			<a class="navlinks" href="#">production</a-->
+		</nav>
+
+		<main id="main">
+			<section id="lander">
+				<img src="images/gcr_control_room.jpg" alt="Chris Ruggiero hard at work in GCR" title="The Master at work.">
+			</section>
+		
+			<section id="intro">
+				<p>Chris Ruggiero is an accomplished composer. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Contact Chris: <a href="mailto:christianericruggiero@gmail.com">christianericruggiero@gmail.com</a>.</p>
+			</section>
+			
+			<section id="features" class="clear">
+				<h2>Feature films</h2>
+
+				<figure class="film">
+				<img src="images/indian_point.jpg" alt="Indian Point movie poster" title="Indian Point movie poster"></figure>
+				<!--iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/238064410&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe-->
+				<figure class="film"><img src="images/kehinde_poster_ed2.jpg" alt="Kehinde Wiley movie poster" title="Kehinde Wiley: An economy of grace movie poster"></figure>
+
+				<figure class="film"><img src="images/what-was-ours-poster.jpg" alt="What Was Ours movie poster" title="What was 
+				Ours movie poster"></figure>
+
+				<figure class="film"><img src="images/hooligan_poster.jpg" alt="Hooligan Sparrow movie poster" title="Hooligan Sparrow movie poster"></figure>
+
+				<figure class="film"><img src="images/out-run-poster.jpg" alt="Out Run movie poster" title="movie poster for Out Run"></figure>
+				
+				<figure class="film"><img src="images/soundbreaking.jpg" alt="Soundbreaking movie poster" title="Soundbreaking movie poster"></figure>
+			</section>
+
+			<section id="television">
+				<h2>Television</h2>
+					<img src="images/american_pickers.jpg" alt="American Pickers logo" title="American Pickers logo">
+					<img src="images/brain-game.jpg" alt="Brain Game logo" title="Brain Game logo">
+					<img src="images/carson_daly.png" alt="Carson Daly logo" title="Carson Daly logo">
+					<img src="images/flipping_out.png" alt="Flipping Out logo" title="Flipping Out logo">
+					<img src="images/mtv-cribs.png" alt="MTV Cribs logo" title="MTV Cribs logo">
+					<img src="images/pawn-stars.jpg" alt="Pawn Stars logo" title="Pawn Stars logo">
+					<img src="images/say_yes.png" alt="Say Yes to the Dress logo" title="Say Yes to the Dress logo">
+					<img src="images/the-voice-logo.png" alt="the voice logo" title="the voice logo">
+					<img src="images/trl.png" alt="TRL logo" title="TRL logo">
+					<img src="images/tosh-logo.png" alt="tosh logo" title="tosh logo">
+			</section>
+	</main>
+
+		<footer id="footer">
+			<p>This is the end. Back to the <a href="#header">top</a>.</p>
+			
+				<script type="text/javascript"> 
+					$(function() {
+				  $('a[href*="#"]:not([href="#"])').click(function() {
+ 		  		 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+ 		    		 var target = $(this.hash);
+ 		     		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+ 		     		if (target.length) {
+    		   		 $('html, body').animate({
+    		     	 scrollTop: target.offset().top
+    		   		 }, 1000);
+    		   		 return false;
+   					   }
+ 					   }
+					  });
+						});
+				</script>
+		</footer>
+	</div>
+</body>
+</html>
