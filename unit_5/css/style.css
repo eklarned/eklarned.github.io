@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Oswald|Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Tinos:400,700');
 
 
@@ -20,8 +20,9 @@ header {
 	padding: 20px;
 	text-align: center;
 	border: 1px black solid;
-    width: 400px;
+    width: 50%;
     float: left;
+    height: 105px;
 }
 
 nav {
@@ -31,8 +32,10 @@ nav {
     font-size: 1em;
     font-family: 'Tinos', serif;
     text-align: center;
-    width: 400px;
+    width: 50%;
     float: right;
+    height: 105px;
+    position: relative;
 }
 
 nav a {
@@ -43,7 +46,14 @@ nav a {
 	font-size: 1em;
 	border-bottom: none;
 	padding-right: 2em;
+	
+}
 
+#navlinks {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
 }
 
 h1 {
