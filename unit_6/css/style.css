@@ -146,8 +146,8 @@ h2 {
 .soundcloud {
 	float: left;
 	width: 25%;
-	height: 0;
-	padding-bottom: 40%;
+	/*height: 0;
+	padding-bottom: 40%;*/
 	overflow: hidden;
 }
 
@@ -156,7 +156,6 @@ h2 {
 	width: 100%;
 	padding: 1em;
 	max-height: 450px;
-	width: 100%;
 }
 
 .vimeo iframe {
