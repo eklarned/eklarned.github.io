@@ -17,9 +17,6 @@ header {
 	text-align: center;
     width: 50%;
     float: left;
-    height: 6.5625em;
-    margin-bottom: 1em;
-    border-bottom: none;
 }
 
 header a {
@@ -30,8 +27,7 @@ nav {
     text-align: center;
     width: 50%;
     float: left;
-    height: 6.5625em;
-    position: relative;
+ 	padding: 2.5em;
 }
 
 nav a {
@@ -43,13 +39,6 @@ nav a {
 	border-bottom: none;
 	padding-right: 2em;
 	}
-
-#navlinks {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
-}
 
 h1 {
 	font-family: 'Tinos', serif;
@@ -70,7 +59,6 @@ h2 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 1em;
-	border-bottom: none;
 	display: block;
 	margin: 1em 0 0 0;
 	padding: 1em;
@@ -136,10 +124,14 @@ h4 {
 }
 
 .tv img {
-	display: block;
-	width: 100%
-	max-width: 280px;
+	width: 100%;
+}
+
+.tv {
 	float: left;
+	padding: 1em;
+	height: 230px;
+	width: 20%;
 }
 
 .additional img {
@@ -207,8 +199,31 @@ h4 {
 	padding-right: .5em;
 }
 
-.icon img {
+.icon img, .other-icon img {
+	width: 100%;
+}
+
+.icon  {
 	width: 5em;
+	padding: .5em;
+	float: left;
+}
+
+.other-icon {
+	width: 5em;
+	padding: .5em;
+	float: right;
+}
+
+#icons {
+	width: 45%;
+	background-color: yellow;
+}
+
+#bottomnav {
+	width: 45%;
+	background-color: red;
+	float: right;
 }
 
 #production img {
@@ -224,13 +239,6 @@ h4 {
 	float: left;
 	padding: 1em;
 	width: 20%;
-}
-
-#television img {
-	/*display: block;
-	float: left;*/
-	width: 15%;
-	padding: 1em;	
 }
 
 #television, #commercials {
@@ -280,44 +288,14 @@ h2 + p {
 	text-align: center;
 }
 
-#footer {
-	font-size: .8em;
-	font-family: 'Tinos', serif;
-	padding: 2em;
-	background-color: rgba(247,234,218,.5);
-	max-width: 100%
+#contact {
+	text-align: center;
+	padding: 1em;
 }
 
-#icons img {
-	float: left;
-	padding: .5em;
-}
-
-#contact p {
-	display: block;
-	float: left;
-}
-
-#contact h4 {
-	display: block;
-	float: left;
-	margin-left: 1em;
-	padding: 1em 4em;
-}
-
-#bottomnav {
-	display: block;
-	float: right;
-}
-
-#bottomnav img{
-	width: 4em;
-}
-
-.icon a {
+.icon a, .other-icon a {
 	border-bottom: none;
 }
-
 
 .title {
 	font-style: italic;
@@ -363,8 +341,8 @@ footer a {
 		height: 100%;
 		padding-bottom: 1em;
 	}
-	#television img {
-		width: 17%
+	.tv {
+		width: 25%
 	}
 }
 
@@ -380,39 +358,33 @@ footer a {
 		width: 100%;
 		padding: 0;
 	}
-	#nav {
+	nav {
 		display: none;
 	}
 	label {
 		display: block;
-	}
-	#toggle:checked + nav{
-		display: block;
-	}
-	#menu{
 		text-align: center;
 		padding: 2.5em;
 	}
-	#television img {
-		width: 21%;
+	#toggle:checked + nav{
+		display: block;
+		font-size: 1em;
 	}
-
-	/* how to make this 2 up? .film img {
-		min-width: 540px;
+	.tv {
+		width: 33.3333%;
 	}
-	.film figure {
+	.film {
 		width: 50%;
-	}*/
-		
+	}
+	.additional {
+		width: 50%;
+	}
 }
 
 
 @media screen and (max-width:700px){
 	h1 {
 		font-size: 1.65em;
-	}
-	#header {
-		height: 4.5em;
 	}
 	#slogan {
 		font-size: .75em;
@@ -423,19 +395,6 @@ footer a {
 		float: none;
 		margin: auto;
 	}
-	#television img {
-		width: 24%;
-	}
-	footer h4 {
-		display: block;
-		float: none;
-		text-align: center;
-		padding: 0;
-	}
-	footer {
-		text-align: center;
-		margin: auto;
-	}
 	#intro {
 		padding: 1em;
 	}
@@ -443,59 +402,25 @@ footer a {
 
 
 @media screen and (max-width:595px){
-	#header {
-		height: 4em;
-	}
-	#nav {
-		height: 4em;
-	}
-	#menu {
-		font-size: .75em;
-		margin: auto;
-	}
 	h1 {
 		font-size: 1.25em;
-		margin: auto;
 	}
 	#slogan {
 		font-size: .6em;
 		letter-spacing: 3px;
 		margin: auto;
-		line-height: -1em;
 	}
-	#television img {
-		width: 32%;
+	header {
+		padding: -4em;
 	}
 	p, #intro p {
 		font-size: .95em;
-	}
+	}	
 }
 
 @media screen and (max-width:500px){
-	#header {
-		height: 3.25em;
-	}
-	#nav {
-		height: 3.25em;
-	}
-	.icon img {
-		width: 20%;
-	}
-	h4 {
-		text-align: center;
-		padding: 0;
-	}
 	p, #intro p {
 		font-size: .85em;
-	}
-	#commercials img {
-		width: 33.3333%;
-	}
-	#television img {
-		width: 48%;
-	}
-	#header {
-		height: 2em;
 	}
 	h1 {
 		font-size: 1em;
@@ -504,6 +429,12 @@ footer a {
 		font-size: .4em;
 		letter-spacing: 3px;
 		}
+	.icon  {
+		width: 33.3333%;
+	}
+	#commercials img {
+		width: 33.3333%;
+	}
 }
 
 
