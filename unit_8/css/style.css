@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Tinos:400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 17px;
+	background-color: rgba(247,234,218,.5);
+}
+
+header {
+	padding: 1.5em;
+	text-align: center;
+    width: 50%;
+    float: left;
+    height: 6.5625em;
+    margin-bottom: 1em;
+    border-bottom: none;
+}
+
+header a {
+    border-bottom: none;
+}
+
+nav {
+    text-align: center;
+    width: 50%;
+    float: left;
+    height: 6.5625em;
+    position: relative;
+}
+
+nav a {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1em;
+	border-bottom: none;
+	padding-right: 2em;
+	}
+
+#navlinks {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Tinos', serif;
+	font-weight: 700;
+	font-size: 2em;
+	text-align: center;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid rgb(22,23,22);
+	padding-bottom: .1em;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1em;
+	border-bottom: none;
+	display: block;
+	margin: 1em 0 0 0;
+	padding: 1em;
+}
+
+#television, #commercials  h2 {
+	color: #451500;
+}
+
+#features, #additional, #production h2 {
+	color: white;
+}
+
+h4 {	
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1em;
+	border-bottom: none;
+	display: block;
+	margin: 1em 0;
+	padding: 1em;
+}
+
+#intro p {
+	font-family: 'Tinos', serif;
+	font-weight: 400;
+	font-size: 1.25em;
+	color: rgb(22,23,22);
+	width: 100%;
+	max-width: 36em;
+	line-height: 1.55em;
+	margin: auto;
+	padding: 1em;
+	text-align: left;
+}
+
+.clear:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	height: 0;
+	clear: both;
+}
+
+.film, .vimeo {
+	float: left;
+	width: 33.3333%;
+}
+
+.additional {
+	float: left;
+	width: 25%;
+}
+
+.film img {
+	display: block;
+	width: 100%;
+	padding: .25em;
+	max-height: 800px;
+	max-width: 540px;
+}
+
+.tv img {
+	display: block;
+	width: 100%
+	max-width: 280px;
+	float: left;
+}
+
+.additional img {
+	display: block;
+	width: 100%;
+	padding: .25em;
+	max-height: 800px;
+	max-width: 540px;
+}
+
+.soundcloud, .vimeo {
+	float: left;
+	width: 33.3333%;
+	height: 0;
+	padding-bottom: 40%;
+	overflow: hidden;
+}
+
+.soundcloud {
+	float: left;
+	width: 33.3333%;
+	overflow: hidden;
+}
+
+.soundcloud iframe {
+	display: block;
+	padding: .75em;
+}
+
+.vimeo iframe {
+	display: block;
+	width: 100%;
+	padding: 1em;
+	max-height: 450px;
+	width: 100%;
+}
+
+#features, #commercials, #production {
+	background-color: rgba(22,23,22,.9);
+	margin: auto;
+	padding: 1.5em;
+    clear: both;
+}
+
+#additional {
+	background-color: rgba(22,23,22,.9);
+	margin: auto;
+	padding: 1.5em;
+    clear: both;	
+}
+
+/*.bigger img {
+	display: block;
+	width: 25%;
+	padding: 1em;
+	float: left;
+	margin: 0 auto;
+}*/
+
+.introtext {
+	font-family: 'Oswald', sans-serif;
+	font-size: .8em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-right: .5em;
+}
+
+.icon img {
+	width: 5em;
+}
+
+#production img {
+	display: block;
+	width: 33.3333%;
+	padding: 1em;
+	float: left;
+	margin: 0 auto;
+}
+
+#commercials img {
+	display: block;
+	float: left;
+	padding: 1em;
+	width: 20%;
+}
+
+#television img {
+	/*display: block;
+	float: left;*/
+	width: 15%;
+	padding: 1em;	
+}
+
+#television, #commercials {
+	background-color: white;
+	padding: 1.5em;
+	width: 100%;
+	margin: auto;
+}
+
+#commercials {
+	clear: both;
+}
+
+p {
+	font-family: 'tinos', serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: rgb(22,23,22);
+	width: 100%;
+	max-width: 36em;
+	line-height: 1.5em;
+	padding: 1em;
+}
+
+h2 + p {
+	padding-top: 0;
+}
+
+#lander img {
+	width: 100%;
+}
+
+#intro{
+	background-color: rgba(247,234,218,.5);
+}
+
+#slogan {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-size: .75em;
+	margin-bottom: 1em;
+	margin: auto;
+}
+
+#slogan p {
+	text-align: center;
+}
+
+#footer {
+	font-size: .8em;
+	font-family: 'Tinos', serif;
+	padding: 2em;
+	background-color: rgba(247,234,218,.5);
+	max-width: 100%
+}
+
+#icons img {
+	float: left;
+	padding: .5em;
+}
+
+#contact p {
+	display: block;
+	float: left;
+}
+
+#contact h4 {
+	display: block;
+	float: left;
+	margin-left: 1em;
+	padding: 1em 4em;
+}
+
+#bottomnav {
+	display: block;
+	float: right;
+}
+
+#bottomnav img{
+	width: 4em;
+}
+
+.icon a {
+	border-bottom: none;
+}
+
+
+.title {
+	font-style: italic;
+}
+
+#wrapper {
+	margin: auto;
+	/*max-width: 1080px;*/
+}
+
+#toggle {
+	display: none;
+}
+
+label {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1em;
+	display: none;
+}
+
+a:hover {
+	color: rgba(22,23,22,.7);
+}
+
+a:active {
+	color: rgba(22,23,22,.5)
+}
+
+footer a {
+	text-decoration: none;
+}
+
+@media screen and (max-width:1150px){
+	.soundcloud{
+		width:50%;
+		height: 50%;
+		padding-bottom: 1em;
+	}
+	.vimeo{
+		width: 50%;
+		height: 100%;
+		padding-bottom: 1em;
+	}
+	#television img {
+		width: 17%
+	}
+}
+
+@media screen and (max-width:768px){
+	body {
+		font-size: 16px;
+	}
+	.soundcloud {
+		width:100%;
+		padding: 0;
+	}
+	.vimeo {
+		width: 100%;
+		padding: 0;
+	}
+	#nav {
+		display: none;
+	}
+	label {
+		display: block;
+	}
+	#toggle:checked + nav{
+		display: block;
+	}
+	#menu{
+		text-align: center;
+		padding: 2.5em;
+	}
+	#television img {
+		width: 21%;
+	}
+
+	/* how to make this 2 up? .film img {
+		min-width: 540px;
+	}
+	.film figure {
+		width: 50%;
+	}*/
+		
+}
+
+
+@media screen and (max-width:700px){
+	h1 {
+		font-size: 1.65em;
+	}
+	#header {
+		height: 4.5em;
+	}
+	#slogan {
+		font-size: .75em;
+		letter-spacing: 5px;
+	}
+	#production img {
+		width: 100%;
+		float: none;
+		margin: auto;
+	}
+	#television img {
+		width: 24%;
+	}
+	footer h4 {
+		display: block;
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+	footer {
+		text-align: center;
+		margin: auto;
+	}
+	#intro {
+		padding: 1em;
+	}
+}
+
+
+@media screen and (max-width:595px){
+	#header {
+		height: 4em;
+	}
+	#nav {
+		height: 4em;
+	}
+	#menu {
+		font-size: .75em;
+		margin: auto;
+	}
+	h1 {
+		font-size: 1.25em;
+		margin: auto;
+	}
+	#slogan {
+		font-size: .6em;
+		letter-spacing: 3px;
+		margin: auto;
+		line-height: -1em;
+	}
+	#television img {
+		width: 32%;
+	}
+	p, #intro p {
+		font-size: .95em;
+	}
+}
+
+@media screen and (max-width:500px){
+	#header {
+		height: 3.25em;
+	}
+	#nav {
+		height: 3.25em;
+	}
+	.icon img {
+		width: 20%;
+	}
+	h4 {
+		text-align: center;
+		padding: 0;
+	}
+	p, #intro p {
+		font-size: .85em;
+	}
+	#commercials img {
+		width: 33.3333%;
+	}
+	#television img {
+		width: 48%;
+	}
+	#header {
+		height: 2em;
+	}
+	h1 {
+		font-size: 1em;
+	}
+	#slogan {
+		font-size: .4em;
+		letter-spacing: 3px;
+		}
+}
+
+
+
+
