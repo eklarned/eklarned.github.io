@@ -358,17 +358,29 @@ footer a {
 		width: 100%;
 		padding: 0;
 	}
+	header {
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding: 1em 1em 0 1em;
+	}
 	nav {
 		display: none;
 	}
 	label {
 		display: block;
 		text-align: center;
-		padding: 2.5em;
+		padding: 1em;
 	}
 	#toggle:checked + nav{
-		display: block;
-		font-size: 1em;
+		width: 100%;
+		display: inline;
+		font-size: .85em;	
+		text-align: center;
+	}
+	.navlinks {
+		padding: 0 1.25em 0 1.25em;
+		margin-top: 0;
 	}
 	.tv {
 		width: 33.3333%;
@@ -381,15 +393,7 @@ footer a {
 	}
 }
 
-
 @media screen and (max-width:700px){
-	h1 {
-		font-size: 1.65em;
-	}
-	#slogan {
-		font-size: .75em;
-		letter-spacing: 5px;
-	}
 	#production img {
 		width: 100%;
 		float: none;
@@ -398,21 +402,14 @@ footer a {
 	#intro {
 		padding: 1em;
 	}
+	.tv{
+		width: 50%;
+		padding: .5em;
+	}
 }
 
 
 @media screen and (max-width:595px){
-	h1 {
-		font-size: 1.25em;
-	}
-	#slogan {
-		font-size: .6em;
-		letter-spacing: 3px;
-		margin: auto;
-	}
-	header {
-		padding: -4em;
-	}
 	p, #intro p {
 		font-size: .95em;
 	}	
@@ -423,10 +420,10 @@ footer a {
 		font-size: .85em;
 	}
 	h1 {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 	#slogan {
-		font-size: .4em;
+		font-size: .65em;
 		letter-spacing: 3px;
 		}
 	.icon  {
