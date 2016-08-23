@@ -227,25 +227,24 @@ h4 {
 }
 
 .icon  {
-	width: 5em;
+	width: 6em;
 	padding: .5em;
 	float: left;
 }
 
 .other-icon {
-	width: 5em;
+	width: 6em;
 	padding: .5em;
 	float: right;
 }
 
 #icons {
 	width: 45%;
-	background-color: yellow;
+	float: left;
 }
 
 #bottomnav {
 	width: 45%;
-	background-color: red;
 	float: right;
 }
 
@@ -440,8 +439,8 @@ footer a {
 		font-size: .65em;
 		letter-spacing: 3px;
 		}
-	.icon  {
-		width: 33.3333%;
+	.icon, .other-icon  {
+		width: 33.333%;
 	}
 	.comm {
 		width: 50%;
@@ -449,5 +448,8 @@ footer a {
 	.tv{
 		width: 50%;
 		padding: 1em;
+	}
+	#contact h4{
+		width: 100%;
 	}
 }
