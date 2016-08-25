@@ -123,9 +123,18 @@ h4 {
 	max-width: 540px;
 }
 
-.tv img {
+.tvtall {
+	width: auto;
+	height: 100%;
+	display: block;
+	margin: auto;
+}
+
+
+.tvshort {
 	width: 100%;
 }
+
 
 .tv {
 	float: left;
@@ -133,6 +142,8 @@ h4 {
 	height: 230px;
 	width: 20%;
 }
+
+
 
 .comm img {
 	display: 100%;
@@ -339,6 +350,13 @@ footer a {
 	border-bottom: none;
 }
 
+@media screen and (max-width:1377px){
+	.tv {
+		width: 25%;
+		height: 181px;
+	}
+}
+
 @media screen and (max-width:1150px){
 	.soundcloud{
 		width:50%;
@@ -349,10 +367,7 @@ footer a {
 		width: 50%;
 		height: 100%;
 		padding-bottom: 1em;
-	}
-	.tv {
-		width: 25%
-	}
+	}	
 }
 
 @media screen and (max-width:1063px){
@@ -360,7 +375,19 @@ footer a {
 		width: 50%;
 		padding: 3em;
 	}
+	.tv {
+		height: 164px;
+	}
 }
+
+@media screen and (max-width:900px){
+	.tv {
+		height: 187px;
+		padding: 2em;
+		width: 33.3333%;
+	}
+}
+
 
 @media screen and (max-width:768px){
 	body {
@@ -387,19 +414,18 @@ footer a {
 		display: block;
 		text-align: center;
 		padding: 1em;
+		font-size: 1.25em;
 	}
 	#toggle:checked + nav{
 		width: 100%;
 		display: inline;
-		font-size: .85em;	
+		font-size: .95em;	
 		text-align: center;
+		padding: .5em 0 .75em 0;
 	}
 	.navlinks {
 		padding: 0 1.25em 0 1.25em;
 		margin-top: 0;
-	}
-	.tv {
-		width: 33.3333%;
 	}
 	.film {
 		width: 50%;
@@ -427,13 +453,18 @@ footer a {
 	}
 }
 
+@media screen and (max-width:639px){
+	.icon, .other-icon {
+		width: 5em;
+	}
+}
+
 
 @media screen and (max-width:595px){
 	p, #intro p {
 		font-size: .95em;
 	}	
 	.tv{
-		width: 50%;
 		padding: 2em;
 	}
 	.comm {
@@ -441,24 +472,19 @@ footer a {
 	}
 }
 
+@media screen and (max-width:533px){
+	.icon, .other-icon  {
+		width: 33.333%;
+	}
+
 @media screen and (max-width:500px){
 	p, #intro p {
 		font-size: .85em;
 	}
-	h1 {
-		font-size: 1.5em;
-	}
 	#slogan {
 		font-size: .65em;
 		letter-spacing: 3px;
-		}
-	.icon, .other-icon  {
-		width: 33.333%;
-	}
-	.tv{
-		width: 50%;
-		padding: 1em;
-	}
+		}	
 	#contact h4{
 		width: 100%;
 	}
