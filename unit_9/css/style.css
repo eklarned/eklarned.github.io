@@ -123,14 +123,6 @@ h4 {
 	max-width: 540px;
 }
 
-/*#television figure {
-	width: 20%;
-	float: left;
-	padding: 1em;
-	height: 180px;
-	position: relative;
-}*/
-
 .tvtall {
 	width: auto;
 	height: 100%;
@@ -143,20 +135,23 @@ h4 {
 }
 
 .tvshort {
-	width: 100%;
-	position: relative;
-	/*top: 60%
+	width: 90%;
+	position: absolute;
+	left:5%;
+	top: 53%;
 	-webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    transform: translateY(-50%);*/
+    transform: translateY(-50%);
 }
 
 .tv {
-	float: left;
 	padding: 1em;
 	height: 230px;
 	width: 20%;
+	float: left;
+	/*height: 180px;*/
+	position: relative;
 }
 
 .comm img {
@@ -333,7 +328,7 @@ h2 + p {
 
 #wrapper {
 	margin: auto;
-	/*max-width: 1080px;*/
+	max-width: 1300px;
 }
 
 #toggle {
@@ -396,13 +391,13 @@ footer a {
 		padding: 3em;
 	}
 	.tv {
-		height: 164px;
+		/*height: 164px;*/
 	}
 }
 
 @media screen and (max-width:900px){
 	.tv {
-		height: 187px;
+		height: 220px;
 		padding: 2em;
 		width: 33.3333%;
 	}
@@ -477,16 +472,32 @@ footer a {
 	.icon, .other-icon {
 		width: 5em;
 	}
+
+	.tv{
+		padding:1em 3em;
+		height:200px;
+	}
+
+	.tvtall{
+		width:90%;
+		height:auto;
+	}
 }
 
 
 @media screen and (max-width:595px){
 	p, #intro p {
-		font-size: .95em;
+		font-size: 1em;
 	}	
 	.tv{
-		padding: 2em;
+		padding: 1em 2em;
+		height:190px;
 	}
+
+	.tvtall{
+		width:75%;
+	}
+
 	.comm {
 		padding: 1em;
 	}
@@ -494,18 +505,30 @@ footer a {
 
 @media screen and (max-width:533px){
 	.icon, .other-icon  {
-		width: 33.333%;
+		width: 33.3333%;
 	}
 
 @media screen and (max-width:500px){
-	p, #intro p {
-		font-size: .85em;
+	p {
+		font-size: .95em;
+		text-align: center;
 	}
+	#intro p {
+		text-align: left;
+		font-size: .95em;
+	}
+
+
+	h2 {
+		text-align: center;
+	}
+
 	#slogan {
-		font-size: .65em;
+		font-size: .75em;
 		letter-spacing: 3px;
 		}	
-	#contact h4 {
-		width: 100%;
-	}
+
+	.tv {
+		padding: 0;
+	}	
 }
